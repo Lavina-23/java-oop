@@ -19,14 +19,5 @@ public class PersonApp {
         person3.name = "Kayla";
         person3.sayHello("Mayla"); // -> my name is null, because it hasn't been set yet
         System.out.println();
-
-        Manager manager = new Manager();
-        manager.name = "Mayla";
-        manager.sayHello("Kayla");
-
-        // inheritance
-        VicePresident vp = new VicePresident();
-        vp.name = "Lavina"; // it inherits properties from class manager
-        vp.sayHello("Iwed");
     }
 }
