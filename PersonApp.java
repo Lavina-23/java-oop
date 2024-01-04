@@ -9,6 +9,7 @@ public class PersonApp {
         System.out.println(person1.name);
         System.out.println(person1.address);
         System.out.println(person1.country);
+        System.out.println();
         person1.sayHello("Anais");
 
         Person person2 = new Person("Iwed");
@@ -17,5 +18,15 @@ public class PersonApp {
         Person person3 = new Person();
         person3.name = "Kayla";
         person3.sayHello("Mayla"); // -> my name is null, because it hasn't been set yet
+        System.out.println();
+
+        Manager manager = new Manager();
+        manager.name = "Mayla";
+        manager.sayHello("Kayla");
+
+        // inheritance
+        VicePresident vp = new VicePresident();
+        vp.name = "Lavina"; // it inherits properties from class manager
+        vp.sayHello("Iwed");
     }
 }
