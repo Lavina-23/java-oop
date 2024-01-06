@@ -17,6 +17,14 @@ public class PolymorphismApp {
     }
 
     static void sayHello(Employee employee) {
-        System.out.println("Hello " + employee.name);
+        if (employee instanceof VicePresident) { // to check if employee is an object of type vicepresident
+            VicePresident vicePresident = (VicePresident) employee; // cast from an employee to a vicepresident type
+            System.out.println("Hello VP " + vicePresident.name);
+        } else if (employee instanceof Manager) {
+            Manager manager = (Manager) employee;
+            System.out.println("Hello Manager " + manager.name);
+        } else {
+            System.out.println("Hello " + employee.name);
+        }
     }
 }
