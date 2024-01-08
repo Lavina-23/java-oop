@@ -5,4 +5,9 @@ public interface Car extends HasBrand /* , isMaintenance */ { // to inherits int
     void drive();
 
     int getTier();
+
+    // default method: subclasses don't need to override this method
+    default boolean isBig() {
+        return false;
+    }
 }
